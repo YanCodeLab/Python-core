@@ -1,4 +1,10 @@
 # Para descobrir o ano atual
-from datetime import date
+import datetime
+
+'''
 ano = date.today().year
-print(f'Estamos no ano de {ano}')
+mes = date.today().month
+dia = date.today().day
+'''
+agora = datetime.datetime.now()
+print(agora.strftime("%d/%m/%Y %H:%M:%S")) # Reorganiza a posição da data e exibe horas 
