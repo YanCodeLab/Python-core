@@ -33,3 +33,9 @@ def diminuir(p, taxa):
     taxa_aplicada = (p* taxa) / 100 # Descobre quanto é  a taxa sobre o preço base
     p = p - taxa_aplicada # Atualiza o preço base, para preço - taxa
     return p
+
+def moeda(p):
+    '''
+    Formata a moeda para aparcer com R$ e virgula no lugar do ponto
+    '''
+    return f'R${p:.2f}'.replace('.', ',')
