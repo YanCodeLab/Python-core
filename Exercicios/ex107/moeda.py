@@ -58,3 +58,15 @@ def moeda(p):
     Formata a moeda para aparcer com R$ e virgula no lugar do ponto
     '''
     return f'R${p:.2f}'.replace('.', ',')
+
+def resumo(p=0, aum=10, reduz=5):
+    print('-'*30)
+    print(f'{"RESUMO DO VALOR"}'.center(30))
+    print('-'*30)
+
+    print(f'Preço Analisado: \t {moeda(p)}')
+    print(f'Dobro do Preço: \t {dobro(p, True)}')
+    print(f'Metade do Preço: \t {metade(p, True)}')
+    print(f'{aum}% de Aumento: \t {aumentar(p, aum, True)}')
+    print(f'{reduz}% de Redução: \t {diminuir(p, reduz, True)}')
+    print('-'*30)
