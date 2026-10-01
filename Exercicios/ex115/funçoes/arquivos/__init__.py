@@ -34,7 +34,7 @@ def verPessoas(nome):
     finally:
        a.close()
 
-def cadastrarPessoa(ar, n, i): #Nome do arquivo, nome da pessoa, idade
+def cadastrarPessoa(ar, n='desconhecido', i=0): #Nome do arquivo, nome da pessoa, idade
     try:
         a = open(ar, 'at')
     except:
